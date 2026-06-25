@@ -1,0 +1,49 @@
+/* Style the background of the whole screen */
+body {
+  background-color: #eef2f3;
+  font-family: sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+/* Style your repair card box */
+.repair-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Style your headers */
+h1 {
+  color: #007bff;
+  text-align: center;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+/* Make sure the image fits nicely */
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Style your Contact Me button */
+button {
+  display: block;
+  width: 100%;
+  background-color: #25d366; /* WhatsApp Green */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+}
