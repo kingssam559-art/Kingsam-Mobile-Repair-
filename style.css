@@ -1,49 +1,235 @@
-/* Style the background of the whole screen */
+/* --- RESET & BASIC STYLING --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  background-color: #eef2f3;
-  font-family: sans-serif;
-  padding: 20px;
-  color: #333;
+    background-color: #121824; /* Deep engineering blue/dark background */
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding-bottom: 80px; /* Space for the floating button */
 }
 
-/* Style your repair card box */
-.repair-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
-/* Style your headers */
-h1 {
-  color: #007bff;
-  text-align: center;
+/* --- HERO SECTION --- */
+.hero {
+    background: linear-gradient(rgba(18, 24, 36, 0.75), rgba(18, 24, 36, 0.95)), 
+                url('https://images.unsplash.com/photo-1601524909162-be87252be298?w=800&auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 3px solid #f59e0b; /* Amber/Gold Accent color */
 }
 
-h2 {
-  color: #2c3e50;
-  margin-top: 0;
+.hero h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Make sure the image fits nicely */
-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+.hero p {
+    font-size: 1rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
 }
 
-/* Style your Contact Me button */
-button {
-  display: block;
-  width: 100%;
-  background-color: #25d366; /* WhatsApp Green */
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 15px;
-  cursor: pointer;
+.status-badge {
+    display: inline-block;
+    background-color: #065f46;
+    color: #34d399;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
 }
+
+.status-badge i {
+    margin-right: 5px;
+}
+
+/* --- SECTION HEADERS --- */
+.section-title {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f59e0b;
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+/* --- CARDS & GRID ARCHITECTURE --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #1e293b; /* Dark card background */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+    transition: transform 0.2s ease;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.card-img-container {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    background-color: #0f172a;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #f59e0b;
+    color: #121824;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-body h3 i {
+    color: #f59e0b;
+}
+
+.card-body p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* --- SCRAP YARD SECTION --- */
+.scrap-section {
+    background-color: #111827;
+    padding: 40px 0;
+    border-top: 1px solid #1f2937;
+    border-bottom: 1px solid #1f2937;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.scrap-box {
+    background-color: #1f2937;
+    border-left: 4px solid #ef4444; /* Alert red indicator */
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.scrap-info h3 {
+    color: #fca5a5;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.scrap-info p {
+    color: #d1d5db;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* --- FLOATING WHATSAPP BUTTON --- */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    background-color: #25d366; /* WhatsApp Official Green */
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.whatsapp-btn:active {
+    background-color: #1ebd58;
+    transform: scale(0.98);
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #1e2937;
+    background-color: #0f172a;
+}
+
+footer p {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.sub-footer {
+    color: #475569;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
