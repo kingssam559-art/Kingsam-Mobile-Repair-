@@ -3,27 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingsam Phone Repair</title>
-    <!-- This line links your HTML to your CSS file -->
+    <title>KINGSAM MOBILE REPAIR | Professional Hardware & Software Engineering</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Main Content Container -->
-    <div class="repair-card">
-        <h2>Hardware Diagnostics</h2>
-        <p>Testing trace paths and checking component voltages.</p>
-        
-        <h1>Kingsam Phone Repair</h1>
-        
-        <!-- Web Image -->
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Phone">
-        
-        <!-- Interactive Button -->
-        <button>Contact Me</button>
-    </div>
+    <!-- HERO HEADER SECTION -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>KINGSAM MOBILE REPAIR</h1>
+            <p>Expert Board-Level Diagnostics & Smartphone Engineering</p>
+            <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Workshop Active</span>
+        </div>
+    </header>
 
-    <!-- This line links your HTML to your JavaScript file -->
+    <!-- CORE SERVICES CATALOG -->
+    <section class="container">
+        <h2 class="section-title">Our Professional Services</h2>
+        <p class="section-subtitle">Browse our solutions below—no pre-chat required</p>
+
+        <div class="services-grid">
+            <!-- Service 1: Dead Phones -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1601524909162-be87252be298?w=500&auto=format&fit=crop&q=60" alt="Dead Phone Repair">
+                    <span class="card-tag">Hardware</span>
+                </div>
+                <div class="card-body">
+                    <h3><i class="fa-solid fa-microchip"></i> Dead Phone Recovery</h3>
+                    <p>Expert troubleshooting for power issues, short circuits, VBUS/VPH power rail failures, and advanced micro-soldering component replacement.</p>
+                </div>
+            </div>
+
+            <!-- Service 2: Software Flashing -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&auto=format&fit=crop&q=60" alt="Phone Flashing & Software">
+                    <span class="card-tag">Software</span>
+                </div>
+                <div class="card-body">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Device Flashing & Unlocking</h3>
+                    <p>Firmware restoration, stock ROM flashing, bootloop fixes, pattern/password removal, and deep operating system optimization.</p>
+                </div>
+            </div>
+
+            <!-- Service 3: Data Recovery -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&auto=format&fit=crop&q=60" alt="Data Recovery">
+                    <span class="card-tag">Forensics</span>
+                </div>
+                <div class="card-body">
+                    <h3><i class="fa-solid fa-database"></i> Advanced Data Recovery</h3>
+                    <p>Retrieval of vital photos, documents, contacts, and app data from water-damaged, physically broken, or severely corrupted devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRAP & RECYCLING SECTION -->
+    <section class="scrap-section">
+        <div class="container">
+            <h2 class="section-title white-text">Scrap Phones & Sourcing</h2>
+            <div class="scrap-box">
+                <div class="scrap-info">
+                    <h3><i class="fa-solid fa-recycle"></i> We Buy Irreparable/Dead Phones</h3>
+                    <p>Do you have heavily damaged, smashed, or unfixable smartphones? Don't throw them away! We purchase scrap devices to responsibly harvest high-quality donor IC chips, connectors, and structural parts for complex board-level restorations.</p>
+                    <p>Bring your dead units to the workshop for a fair valuation or parts credit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESSORIES MARKETPLACE CATALOG -->
+    <section class="container">
+        <h2 class="section-title">Premium Accessories & Spares</h2>
+        <p class="section-subtitle">High-quality components and daily essentials in stock</p>
+
+        <div class="services-grid">
+            <!-- Accessory 1: Chargers -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1619441201124-7df8f8cfa43c?w=500&auto=format&fit=crop&q=60" alt="Premium Chargers">
+                    <span class="card-tag">In Stock</span>
+                </div>
+                <div class="card-body">
+                    <h3>Fast Chargers & Cables</h3>
+                    <p>Heavy-duty, high-amperage power adapters and durable braided USB-C / Lightning cables designed to protect charging circuits.</p>
+                </div>
+            </div>
+
+            <!-- Accessory 2: Power Banks -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1609592424085-f6880092d6e3?w=500&auto=format&fit=crop&q=60" alt="Power Banks">
+                    <span class="card-tag">In Stock</span>
+                </div>
+                <div class="card-body">
+                    <h3>High-Capacity Power Banks</h3>
+                    <p>Reliable portable external battery packs to keep your essential smartphones and workspaces powered up anywhere, anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CALL TO ACTION -->
+    <footer>
+        <p>&copy; 2026 KINGSAM MOBILE REPAIR. All Rights Reserved.</p>
+        <p class="sub-footer">Engineered for absolute precision and reliability.</p>
+    </footer>
+
+    <!-- FIXED ACTION BUTTON FOR WHATSAPP BOOKING -->
+    <button class="whatsapp-btn" aria-label="Book a repair on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i> Book Repair / Inquire
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
