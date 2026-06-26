@@ -89,5 +89,22 @@
 
     <!-- Externalized Script File Link -->
     <script src="script.js"></script>
+        <div id="welcomePopup" class="popup">
+        <div class="popup-content">
+            <p>Welcome to <strong>KINGSAM MOBILE REPAIR</strong>. Our top priority is to ensure your smooth communication. How can we help you fix your device today?</p>
+            <button onclick="closePopup()">Continue</button>
+        </div>
+    </div>
+
+    <style>
+        .popup { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 999999; }
+        .popup-content { background: #1e293b; padding: 25px; border-radius: 12px; text-align: center; width: 85%; color: white; border: 2px solid #a855f7; }
+        .popup-content button { margin-top: 15px; padding: 10px 25px; background: #a855f7; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+    </style>
+
+    <script>
+        function closePopup() { document.getElementById('welcomePopup').style.display = 'none'; }
+    </script>
+    
 </body>
 </html>
