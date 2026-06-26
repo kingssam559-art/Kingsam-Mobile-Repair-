@@ -23,20 +23,20 @@
     <section class="container banner-section">
         <div class="banner-card">
             <img src="1775067407910.png" alt="Kingsam Mobile Repair Official Banner" class="brand-banner">
-
         </div>
     </section>
 
     <!-- CORE SERVICES CATALOG -->
     <section class="container">
         <h2 class="section-title">Our Professional Services</h2>
-        <p class="section-subtitle">Browse our solutions below—no pre-chat required</p>
+        <!-- UPDATED TEXT HERE -->
+        <p class="section-subtitle">Contact us on WhatsApp for expert solutions</p>
 
         <div class="services-grid">
-            <!-- Service 1: Dead Phones -->
+            <!-- Service 1: Dead Phones (UPDATED IMAGE) -->
             <div class="card">
                 <div class="card-img-container">
-                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&auto=format&fit=crop&q=60" alt="Dead Phone Repair">
+                    <img src="1000083431_2.jpg" alt="Dead Phone Recovery - Inside Phone Hardware">
                     <span class="card-tag">Hardware</span>
                 </div>
                 <div class="card-body">
@@ -88,14 +88,15 @@
     <!-- ACCESSORIES MARKETPLACE CATALOG -->
     <section class="container">
         <h2 class="section-title">Premium Accessories & Spares</h2>
+        <!-- UPDATED TEXT HERE -->
         <p class="section-subtitle">High-quality components and daily essentials in stock</p>
 
         <div class="services-grid">
-            <!-- Accessory 1: Chargers -->
+            <!-- Accessory 1: Premium Chargers (UPDATED IMAGE) -->
             <div class="card">
                 <div class="card-img-container">
-                    <img src="https://images.unsplash.com/photo-1619441201124-7df8f8cfa43c?w=500&auto=format&fit=crop&q=60" alt="Premium Chargers">
-                    <span class="card-tag">In Stock</span>
+                    <img src="1000083433.jpg" alt="Premium Chargers & Accessories Layout">
+                    <span class="card-tag">Premium Chargers In Stock</span>
                 </div>
                 <div class="card-body">
                     <h3>Fast Chargers & Cables</h3>
@@ -117,22 +118,23 @@
         </div>
     </section>
 
-    <!-- FOOTER / CALL TO ACTION -->
+    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 KINGSAM MOBILE REPAIR. All Rights Reserved.</p>
         <p class="sub-footer">Engineered for absolute precision and reliability.</p>
     </footer>
 
-    <!-- FIXED ACTION BUTTON FOR WHATSAPP BOOKING -->
-    <button class="whatsapp-btn" onclick="openWhatsApp()" aria-label="Book a repair on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i> Book Repair / Inquire
-    </button>
+    <!-- WHATSAPP FLOATING BUTTON (Restored & Fixed) -->
+    <div class="whatsapp-footer-container">
+        <button class="whatsapp-btn" onclick="openWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i> Contact Us on WhatsApp
+        </button>
+    </div>
 
     <script>
-        // Automatic WhatsApp linkage routing script
         function openWhatsApp() {
             var phoneNumber = "2348105904631"; 
-            var message = "Hello Kingsam Mobile Repair, I saw your website catalog and I want to inquire about a phone repair service/accessory.";
+            var message = "Hello Kingsam Mobile Repair, I saw your website catalog and I want to inquire about your professional phone services.";
             var encodedMessage = encodeURIComponent(message);
             var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
             window.open(whatsappUrl, '_blank');
