@@ -19,6 +19,13 @@
         </div>
     </header>
 
+    <!-- OFFICIAL BUSINESS BANNER SHOWCASE -->
+    <section class="container banner-section">
+        <div class="banner-card">
+            <img src="banner.png" alt="Kingsam Mobile Repair Official Banner" class="brand-banner">
+        </div>
+    </section>
+
     <!-- CORE SERVICES CATALOG -->
     <section class="container">
         <h2 class="section-title">Our Professional Services</h2>
@@ -28,7 +35,7 @@
             <!-- Service 1: Dead Phones -->
             <div class="card">
                 <div class="card-img-container">
-                    <img src="https://images.unsplash.com/photo-1601524909162-be87252be298?w=500&auto=format&fit=crop&q=60" alt="Dead Phone Repair">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&auto=format&fit=crop&q=60" alt="Dead Phone Repair">
                     <span class="card-tag">Hardware</span>
                 </div>
                 <div class="card-body">
@@ -116,10 +123,20 @@
     </footer>
 
     <!-- FIXED ACTION BUTTON FOR WHATSAPP BOOKING -->
-    <button class="whatsapp-btn" aria-label="Book a repair on WhatsApp">
+    <button class="whatsapp-btn" onclick="openWhatsApp()" aria-label="Book a repair on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i> Book Repair / Inquire
     </button>
 
-    <script src="script.js"></script>
+    <script>
+        // Automatic WhatsApp linkage routing script
+        function openWhatsApp() {
+            var phoneNumber = "2348105904631"; 
+            var message = "Hello Kingsam Mobile Repair, I saw your website catalog and I want to inquire about a phone repair service/accessory.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
 </body>
 </html>
